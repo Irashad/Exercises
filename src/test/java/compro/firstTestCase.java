@@ -26,10 +26,7 @@ public class firstTestCase {
         driver.get("https://www.google.com/");
     }
     @AfterTest
-    public void afterTest()
-    {
-        System.out.println("Test Finished Successfully");
-    }
+    public void afterTest(){System.out.println("Test Finished Successfully");}
 
 
 }
