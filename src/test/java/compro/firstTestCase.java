@@ -12,25 +12,23 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 public class firstTestCase {
-    String chromePath="C:\\Users\\resha\\chromedriver_win32";
+    String chromePath="C:\\Users\\resha\\IdeaProjects\\ders\\src\\test\\java\\compro\\chromedriver.exe";
     WebDriver driver;
     @BeforeSuite
     public void before()
     {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\resha\\IdeaProjects\\ders\\src\\test\\java\\compro\\chromedriver.exe");
-
+        System.setProperty("webdriver.chrome.driver", chromePath);
         driver = new ChromeDriver();
     }
     @Test
     public void testcase1()
     {
-        driver.get("https://stackoverflow.com/questions/62732890/intellij-error-test-framework-quit-unexpectedly-intellij");
-        System.out.println("sasd");
+        driver.get("https://www.google.com/");
     }
     @AfterTest
     public void afterTest()
     {
-        System.out.println("Test Bitdi");
+        System.out.println("Test Finished Successfully");
     }
 
 
