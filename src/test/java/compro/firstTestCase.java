@@ -24,6 +24,8 @@ public class firstTestCase {
     public void testcase1()
     {
         driver.get("https://www.google.com/");
+        driver.findElement(By.cssSelector(".react-autosuggest__input")).click();
+
     }
     @AfterTest
     public void afterTest(){System.out.println("Test Finished Successfully");}
