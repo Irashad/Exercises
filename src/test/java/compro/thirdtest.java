@@ -1,5 +1,6 @@
 package compro;
 
+import Drivers.DriversPath;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,7 +18,7 @@ public class thirdtest {
     @BeforeSuite
     public void before()
     {
-        System.setProperty("webdriver.chrome.driver", chromePath);
+        System.setProperty("webdriver.chrome.driver", DriversPath.chromePath);
         driver = new ChromeDriver();
     }
     @Test
