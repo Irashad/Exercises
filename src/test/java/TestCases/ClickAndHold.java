@@ -32,15 +32,18 @@ public class ClickAndHold {
 
         WebElement titleC = driver.findElement(By.xpath("//li[text()= 'C']"));
 
-        Actions builder = new Actions(driver);
 
-        Action movetoElement = builder.moveToElement(titleC).build(); // Call clickAndHold() method to perform click and hold operation.
-        movetoElement.perform();
+       Actions builder = new Actions(driver);
+
+
+        Action hoveronElement = builder.moveToElement(titleC).build(); // Call clickAndHold() method to perform click and hold operation.
+        hoveronElement.perform();
 
         Action clickAndHold = builder.clickAndHold().build();
         clickAndHold.perform();
 
-        Action moveToAnotherSide = builder.moveToElement(driver.findElement(By.xpath("//h3[contains(text(),'Click and Hold in')]"))).build();
+        WebElement textSide=driver.findElement(By.xpath("//h3[contains(text(),'Click and Hold in')]"));
+        Action moveToAnotherSide = builder.moveToElement(textSide).build();
         moveToAnotherSide.perform();
     }
     @AfterTest

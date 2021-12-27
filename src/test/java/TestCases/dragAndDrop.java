@@ -24,10 +24,9 @@ public class dragAndDrop {
     @Test
     public void rightClick() throws InterruptedException {
         driver.manage().window().maximize();
-
         String url = "http://demo.guru99.com/test/drag_drop.html";
         driver.get(url);
-//Element which needs to drag.
+        //Element which needs to drag.
         WebElement From=driver.findElement(By.xpath("//*[@id='credit2']/a"));
 
         //Element on which need to drop.

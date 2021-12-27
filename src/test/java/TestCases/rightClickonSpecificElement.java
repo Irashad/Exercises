@@ -18,8 +18,12 @@ public class rightClickonSpecificElement {
             driver = new ChromeDriver();
         }
 
+
+
+
+
         @Test
-        public void rightClick() throws InterruptedException {
+        public void rightClickspecificelement() throws InterruptedException {
 //Launch the Application Under Test (AUT)
             driver.get("http://demo.guru99.com/test/simple_context_menu.html");
             driver.manage().window().maximize();
@@ -32,11 +36,22 @@ public class rightClickonSpecificElement {
             WebElement element = driver.findElement(By.cssSelector(".context-menu-icon-copy"));
             element.click();
 // Accept the alert displayed
-//driver.switchTo().alert().accept();
+            Thread.sleep(3000);
+            driver.switchTo().alert().accept();
+            Thread.sleep(3000);
+
 // Closing the driver instance
 //driver.quit();
 
         }
+
+
+
+
+
+
+
+
 
         @AfterTest
         public void afterTest() {

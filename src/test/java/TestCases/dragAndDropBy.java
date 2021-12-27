@@ -21,9 +21,10 @@ public class dragAndDropBy {
     }
     @Test
     public void rightClick() throws InterruptedException {
-
+        driver.manage().window().maximize();
         String url = "http://demo.guru99.com/test/drag_drop.html";
         driver.get(url);
+
 //Element which needs to drag.
         WebElement From=driver.findElement(By.xpath("//*[@id='credit2']/a"));
 
@@ -34,7 +35,7 @@ public class dragAndDropBy {
         Actions builder=new Actions(driver);
 
         //Dragged and dropped.
-        Action dragAndDrop = builder.dragAndDropBy(From,135, 40).build();
+        Action dragAndDrop = builder.dragAndDropBy(From,287, 38).build();
         dragAndDrop.perform();
 
         Thread.sleep(5000);

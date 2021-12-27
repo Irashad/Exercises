@@ -12,11 +12,20 @@ public class GetDriver {
         chrome = new ChromeDriver();
         return chrome;
     }
+
+
     public static WebDriver getFirefoxDriver()
     {
         firefox = new FirefoxDriver();
         return firefox;
     }
+
+
+
+
+
+
+
 
 
     /*AFTER
