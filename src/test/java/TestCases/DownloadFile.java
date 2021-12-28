@@ -11,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -26,7 +27,7 @@ import java.sql.DriverManager;
 
 public class DownloadFile {
     //TODO:
-
+    boolean exists;
     WebDriver driver;
     @BeforeSuite
     public void before()
@@ -52,24 +53,22 @@ public class DownloadFile {
             System.out.println(ex.toString());
         }
 
+
+
         //filen movcud olmasini yoxlamaq
-        boolean exists=false;
+
         String path = "C:\\Wget\\msgr11us.exe";
         try{
             FileReader fr = new FileReader(path);
             exists=true;
         } catch (FileNotFoundException e) {
-        }
 
+        }
         if(exists)
         {
-            System.out.println("File yuklenib");
+            System.out.println("file yuklenib");
         }
-        else {
-            System.out.println("File yuklenmeyib");
-        }
-
-
+            Assert.assertTrue(exists);
     }
     @AfterTest
     public void afterTest(){System.out.println("Test Finished Successfully");}
