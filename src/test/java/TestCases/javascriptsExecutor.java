@@ -26,9 +26,14 @@ public class javascriptsExecutor
     public void windowhandlemethod1() throws InterruptedException {
         driver.get("https://www.google.com/search?q=facebook");
 
+        String asd = "var tenure = prompt(\"Please enter preferred tenure in years\", \"15\");\n" +
+                "    \n" +
+                "if (tenure != null) {\n" +
+                "    alert(\"You have entered \" + tenure + \" years\" );\n" +
+                "}";
         //ALERT cixarmaq
-        // JavascriptExecutor js = (JavascriptExecutor)driver;
-        // js.executeScript("alert('hello world');");
+         JavascriptExecutor js = (JavascriptExecutor)driver;
+         js.executeScript(asd);
 
         //ELEMEMT CLICK
   /*      WebElement element = driver.findElement(By.xpath("//xpathimiz"));
@@ -53,8 +58,6 @@ public class javascriptsExecutor
         //Vertical scroll - down by 150  pixels
         //js.executeScript("window.scrollBy(0,150)");
     }
-
-
     @AfterTest
     public void afterTest(){System.out.println("Test Finished Successfully");}
 }
