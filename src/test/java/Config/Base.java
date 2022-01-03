@@ -3,12 +3,14 @@ package Config;
 import Drivers.DriversPath;
 import Drivers.GetDriver;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 public class Base {
 
-    public WebDriver driver;
+    public static WebDriver driver;
     @BeforeSuite
     public void before()
     {
@@ -17,6 +19,8 @@ public class Base {
 
 
     }
-    @AfterTest
-    public void afterTest(){System.out.println("Test Finished Successfully");}
+    @AfterSuite
+    public void afterTest(){System.out.println("Test Finished Successfully");
+        driver.quit();
+    }
 }

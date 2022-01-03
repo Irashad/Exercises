@@ -4,20 +4,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 public class GetDriver {
 
-    //BEFORE
-    private static ChromeDriver chrome;
-    private static FirefoxDriver firefox;
     public static WebDriver getChromeDriver()
     {
-        chrome = new ChromeDriver();
-        return chrome;
+        //BEFORE
+        return new ChromeDriver();
     }
 
 
     public static WebDriver getFirefoxDriver()
     {
-        firefox = new FirefoxDriver();
-        return firefox;
+        return new FirefoxDriver();
     }
 
 
