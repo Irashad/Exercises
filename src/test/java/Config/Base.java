@@ -15,6 +15,7 @@ public class Base {
         System.setProperty(DriversPath.chromeProperty,DriversPath.chromePath);
         driver = GetDriver.getChromeDriver();
 
+
     }
     @AfterTest
     public void afterTest(){System.out.println("Test Finished Successfully");}

@@ -20,14 +20,14 @@ import java.util.Set;
 
 public class WindowHandle_Demo extends Base {
 
-
-    public void test(){
+    @Test
+    public void test() throws InterruptedException {
     //Launching the site.
         driver.get("http://demo.guru99.com/popup.php");
         driver.manage().window().maximize();
 
         driver.findElement(By.xpath("//*[contains(@href,'popup.php')]")).click();
-
+        Thread.sleep(2000);
         String MainWindow=driver.getWindowHandle();
 
     // To handle all new opened window.
@@ -37,7 +37,6 @@ public class WindowHandle_Demo extends Base {
         while(i1.hasNext())
             {
                 String ChildWindow=i1.next();
-
         if(!MainWindow.equalsIgnoreCase(ChildWindow))
         {
 
@@ -45,11 +44,13 @@ public class WindowHandle_Demo extends Base {
             driver.switchTo().window(ChildWindow);
             driver.findElement(By.name("emailid"))
                     .sendKeys("gaurav.3n@gmail.com");
+            Thread.sleep(2000);
 
             driver.findElement(By.name("btnLogin")).click();
+            Thread.sleep(2000);
 
             // Closing the Child Window.
-            driver.close();
+
         }
     }
     // Switching to Parent window i.e Main Window.

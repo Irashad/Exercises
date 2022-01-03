@@ -36,24 +36,23 @@ public class windowHandles {
         Thread.sleep(1000);
         driver.switchTo().window(tabs.get(0));
         driver.get(facebookUrl);
+
     }
     @Test
-    public void openLinkInNewTab(String link){
+    public void openLinkInNewTab() throws InterruptedException {
+        driver.get("https://www.google.com/search?q=facebook");
+        String facebookUrl = driver.findElement(By.xpath("(//a[contains(@href,'facebook.com')])[1]")).getAttribute("href");
 
-        String currentHandle = driver.getWindowHandle();
-        ((JavascriptExecutor) driver).executeScript("window.open()");
-        //getting all the handles currently available
-        Set<String> handles = driver.getWindowHandles();
-        for (String actual : handles) {
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("window.open()");
 
-            if (!actual.equalsIgnoreCase(currentHandle)) {
-                //switching to the opened tab
-                driver.switchTo().window(actual);
-
-                //opening the URL saved.
-                driver.get(link);
-            }
-        }
+        Thread.sleep(2000);
+        ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+        Thread.sleep(1000);
+        driver.get(facebookUrl);
+        Thread.sleep(1000);
+        driver.switchTo().window(tabs.get(0));
     }
     @AfterTest
     public void afterTest(){System.out.println("Test Finished Successfully");}
