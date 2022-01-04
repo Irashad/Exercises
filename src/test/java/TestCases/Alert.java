@@ -13,7 +13,7 @@ public class Alert extends Base {
     private void Alert() throws InterruptedException {
         driver.get("http://demo.guru99.com/test/delete_customer.php");
         Thread.sleep(2000);
-        WebElement text =  driver.findElement(By.name("cusid"));
+        WebElement text = driver.findElement(By.name("cusid"));
         text.sendKeys("199");
         driver.findElement(By.name("submit")).submit();
         String msg = driver.switchTo().alert().getText();
@@ -21,4 +21,5 @@ public class Alert extends Base {
         System.out.println(msg);
 
     }
+
 }

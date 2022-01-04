@@ -3,7 +3,7 @@
 <suite name="Suite">
 	<test name="Guru 99 Smoke Test Demo">
 		<classes>
-			<class name="TestGroup.TC_Class1">
+			<class name="TestNG.TestGroup.TC_Class1">
 				<methods>
 					<include name="tc01LaunchURL"></include>
 					<include name="tc03EnterCredentials"></include>

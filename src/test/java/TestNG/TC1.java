@@ -1,6 +1,4 @@
-package TestGroup;
-
-import java.util.concurrent.TimeUnit;
+package TestNG;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +6,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TC_Class1 {
+import java.util.concurrent.TimeUnit;
+
+public class TC1 {
 	public static final WebDriver webDriver = new FirefoxDriver();;
 
 	String launchPageHeading = "//h2[text()='Guru99 Bank']";
