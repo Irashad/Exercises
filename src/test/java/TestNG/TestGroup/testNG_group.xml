@@ -3,18 +3,18 @@
 <suite name="Suite">
 	<test name="Guru 99 Smoke Test Demo">
 		<!-- Ancaq "Strong Ties" ile qruplananalar run edilecek -->
-		<!--<groups>
-			<run>
-				<include name="strong_ties" />
-			</run>
-		</groups>-->
-
-		<!-- asagidakini commentden cixardiqda ancaq "bonding"ler test edilecek -->
 		<groups>
 			<run>
 				<include name="bonding" />
 			</run>
 		</groups>
+
+		<!-- asagidakini commentden cixardiqda ancaq "bonding"ler test edilecek -->
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<include name="testet" />-->
+<!--			</run>-->
+<!--		</groups>-->
 
 		<classes>
 			<class name="TestNG.TestGroup.TC_Class1"/>

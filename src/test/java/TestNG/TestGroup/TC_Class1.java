@@ -24,7 +24,7 @@ public class TC_Class1 {
      * This test case will initialize the webDriver
      *
      */
-    @Test(groups = { "bonding", "strong_ties" })
+    @Test(groups = { "bonding", "strong_ties","testet" })
     public void tc01LaunchURL() {
         System.setProperty(DriversPath.chromeProperty,DriversPath.chromePath);
         webDriver = new ChromeDriver();

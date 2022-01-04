@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/resha/IdeaProjects/Exercises/src/test/java/TestNG/SkipTest/Example_Skip_Tests.java">
+        <classes>
+            <class name="TestNG.SkipTest.Example_Skip_Tests">
+                <methods>
+                    <include name="successTC1"/>
+                    <include name="failTC2"/>
+                    <include name="skipTestOnParticularCondition"/>
+                    <include name="skipTest"/>
+                    <include name="successTC5"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
