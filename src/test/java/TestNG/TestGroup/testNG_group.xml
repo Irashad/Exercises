@@ -4,8 +4,8 @@
 	<test name="Guru 99 Smoke Test Demo">
 		<!-- Ancaq "Strong Ties" ile qruplananalar run edilecek -->
 		<groups>
-			<run>
-				<include name="bonding" />
+			<run >
+				<include name="bonding"/>
 			</run>
 		</groups>
 

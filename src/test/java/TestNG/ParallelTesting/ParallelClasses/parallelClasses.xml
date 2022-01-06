@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="2">
+    <!-- test taginin icindeki classin adinin parallelclasses2 veya parallelclasses1 olmasinin ferqi yoxdur ikisinden biri olmalidir -->
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/resha/IdeaProjects/Exercises/src/test/java/TestNG/ParallelTesting/parallelClasses2.java">
+        <classes>
+            <class name="TestNG.ParallelTesting.ParallelClasses.parallelClasses"/>
+            <class name="TestNG.ParallelTesting.ParallelClasses.parallelClasses2"/>
+        </classes>
+    </test>
+</suite>

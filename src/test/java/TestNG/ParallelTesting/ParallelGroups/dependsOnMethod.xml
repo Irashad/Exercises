@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" thread-count="3" parallel="methods">
+    <test verbose="2"
+          name="C:/Users/resha/IdeaProjects/Exercises/src/test/java/TestNG/ParallelTesting/dependsOnMethodWithXML.java">
+        <groups>
+            <run >
+                <include  name="TC1Group" />
+                <include name="TC2Group" />
+            </run>
+
+            <!-- dependencyni commentden cixarsaq parallel thread olmayacaq dependentdir die -->
+          <!--  <dependencies>
+                <group name="TC1Group" depends-on="TC2Group" />
+            </dependencies>-->
+
+        </groups>
+
+        <classes>
+            <class name="TestNG.ParallelTesting.ParallelGroups.dependsOnMethodWithXML"/>
+        </classes>
+  <!--      <classes >
+                <class name="TestNG.ParallelTesting.dependsOnMethodWithXML"  >
+                    <methods >
+                        <include name="TC_001"/>
+                        <include name="TC_002"/>
+                    </methods>
+                </class>
+        </classes>-->
+
+    </test>
+
+</suite>
