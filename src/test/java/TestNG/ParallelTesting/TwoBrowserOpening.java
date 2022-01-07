@@ -13,8 +13,7 @@ public class TwoBrowserOpening{
     public static WebDriver driver2;
 
     @BeforeSuite
-    public void before()
-    {
+    public void before() throws InterruptedException {
         System.setProperty(DriversPath.chromeProperty,DriversPath.chromePath);
         driver = GetDriver.getChromeDriver();
         driver2 = GetDriver.getChromeDriver();

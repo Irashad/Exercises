@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="1" name="Gmail Suite" annotations="JDK" parallel="tests">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/resha/IdeaProjects/Exercises/src/test/java/TestNG/RunningMultipleTestSuites/Suite1">
+        <classes>
+            <class name="TestNG.RunningMultipleTestSuites.Suite1.Flipkart"/>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/resha/IdeaProjects/Exercises/src/test/java/TestNG/RunningMultipleTestSuites/Suite2">
+        <classes>
+            <class name="TestNG.RunningMultipleTestSuites.Suite2.SnapDeal"/>
+        </classes>
+    </test>
+</suite>

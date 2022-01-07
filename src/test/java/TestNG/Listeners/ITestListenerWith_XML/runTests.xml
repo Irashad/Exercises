@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="TestNG.Listeners.ITestListenerWith_XML.ListenerTest"/>
+    </listeners>
+
+    <test verbose="2"
+          name="C:/Users/resha/IdeaProjects/Exercises/src/test/java/TestNG/Listeners/ITestListenerWith_XML/TestCases2.java">
+        <classes>
+                <class name="TestNG.Listeners.ITestListenerWith_XML.TestCases"/>
+                <class name="TestNG.Listeners.ITestListenerWith_XML.TestCases2"/>
+        </classes>
+    </test>
+
+</suite>

@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class ParallelTesting {
-    @Test
+    @Test()
     public void executSessionO() throws InterruptedException {
         //First session of WebDriver
         System.setProperty(DriversPath.chromeProperty,DriversPath.chromePath);
@@ -29,7 +29,6 @@ public class ParallelTesting {
         driver3.get("http://demo.guru99.com/V4/");
         //find user name text box and fill it
         driver3.findElement(By.name("uid")).sendKeys("Driver 3");
-
     }
 
 

@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 public class dependsOnMethod extends Base {
 
+    /***/
     int i=1;
     @Test()
     public void TC1()

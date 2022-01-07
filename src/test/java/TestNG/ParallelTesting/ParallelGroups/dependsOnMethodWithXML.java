@@ -13,7 +13,6 @@ public class dependsOnMethodWithXML  {
 
         System.setProperty(DriversPath.chromeProperty,DriversPath.chromePath);
         WebDriver d1 = GetDriver.getChromeDriver();
-        Thread.sleep(10000); // burda sleepi ona gore edirikki emin olaqki parallel test edirik
         System.out.println("TC_001 has started");
         d1.get("http://demo.guru99.com/V4/");
         System.out.println("TC_001 has finished");

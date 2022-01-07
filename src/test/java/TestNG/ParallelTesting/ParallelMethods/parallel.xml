@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" thread-count="3" parallel="methods">
+<suite name="All Test Suite" thread-count="2" parallel="methods">
     <test verbose="2" preserve-order="true"
           name="C:/Users/resha/IdeaProjects/Exercises/src/test/java/TestNG/ParallelTesting/ParallelTesting.java">
 
         <!-- iki usul var.  -->
 
         <!-- 1. -->
-        <!-- <classes>
+         <classes>
                <class name="TestNG.ParallelTesting.ParallelMethods.ParallelTesting">
                    <methods>
                        <include name="executSessionO"/>
                        <include name="executSessionB"/>
                    </methods>
                </class>
-           </classes>-->
+           </classes>
 
         <!-- 2. -->
-        <classes>
+      <!--  <classes>
             <class name="TestNG.ParallelTesting.ParallelMethods.ParallelTesting"/>
-        </classes>
+        </classes>-->
     </test>
 </suite>
