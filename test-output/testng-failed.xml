@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
+  <listeners>
+    <listener class-name="TestNG.Listeners.IAnnotationTransformer.ITransformer.IClassAnnotationChanger.example3.MyListener"/>
+  </listeners>
+  <test thread-count="5" name="C:/Users/resha/IdeaProjects/Exercises/src/test/java/TestNG/Listeners/IAnnotationTransformer/example1/testCase.java(failed)">
+    <classes>
+      <class name="TestNG.Listeners.IAnnotationTransformer.ITransformer.IClassAnnotationChanger.example3.testCase2">
+        <methods>
+          <include name="verifyTitleGoogle"/>
+        </methods>
+      </class> <!-- TestNG.Listeners.IAnnotationTransformer.ITransformer.IClassAnnotationChanger.example3.testCase2 -->
+      <class name="TestNG.Listeners.IAnnotationTransformer.ITransformer.IClassAnnotationChanger.example3.testCase">
+        <methods>
+          <include name="verifyTitleGoogle"/>
+        </methods>
+      </class> <!-- TestNG.Listeners.IAnnotationTransformer.ITransformer.IClassAnnotationChanger.example3.testCase -->
+    </classes>
+  </test> <!-- C:/Users/resha/IdeaProjects/Exercises/src/test/java/TestNG/Listeners/IAnnotationTransformer/example1/testCase.java(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

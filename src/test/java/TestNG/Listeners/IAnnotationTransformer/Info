@@ -1,0 +1,16 @@
+IAnnotationTransformer is an interface that provides a method
+“transform” which would get invoked by TestNG to modify the behaviour of Test annotation method in our test class.
+The transform method provides various parameters:
+
+1.annotation: The annotation that would get read from the test class.
+2. testClass: If the annotation found on a class, this parameter would represent that same class.
+3. testConstructor: If the annotation found on a constructor, this parameter would represent that same constructor.
+4. testMethod: If the annotation found on a method, this parameter would represent that same method.
+Note: At least one of the parameters will be non-null.
+
+Below is the sample code that would be executed at the suite level.
+In this code, we have used a parameter “alwaysRun = true” in our Test annotation that indicates that the test
+method would always run even if the parameters on which the method depends fails. However, we would transform
+this behaviour of our test method through IAnnotationTransformer Listener which won’t allow the particular test method
+to get executed.
+

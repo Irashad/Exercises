@@ -1,0 +1,14 @@
+This interface allows you to perform some action before and after
+a method has been executed. This listener gets invoked for configuration
+and test methods. This TestNG listener in Selenium WebDriver works same as the
+ ITestListerner and the ISuiteListerner. However, there is a difference that you
+ should make a note of & that is, in IInvokedMethodListener, it makes the call before
+  and after every method.
+
+There are two methods to be implemented:
+
+beforeInvocation(): This method is invoked prior every method.
+
+afterInvocation(): This method is invoked post every method.
+
+Here is sample code for this listener, implemented at class level.

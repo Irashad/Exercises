@@ -1,0 +1,4 @@
+her iki suitimizi combine edeceyik
+
+parent suite her iki suitein icinde olan xmlleri run edir
+suite listener vasitesile her suite baslamazdan evvle ve sonra method cagrilir listener vasitesile

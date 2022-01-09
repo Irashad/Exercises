@@ -1,0 +1,9 @@
+This TestNG listener in Selenium WebDriver is implemented at a suite level called ISuiteListener. It has 2 methods:
+
+onStart: This method is invoked prior the test suite execution.
+
+onFinish: This method is invoked post the test suite execution.
+
+This listener basically listen to the events to have occurred before and after the execution of the suite.If the
+parent suite further contains
+ child suites then child suites are executed before running the parent suite.

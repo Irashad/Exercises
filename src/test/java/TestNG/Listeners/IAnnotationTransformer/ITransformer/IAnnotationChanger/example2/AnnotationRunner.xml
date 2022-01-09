@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    
+    <listeners>
+        <listener class-name="TestNG.Listeners.IAnnotationTransformer.ITransformer.IAnnotationChanger.example2.MyListener"/>
+    </listeners>
+
+    <test verbose="2"
+          name="C:/Users/resha/IdeaProjects/Exercises/src/test/java/TestNG/Listeners/IAnnotationTransformer/ITransformer/example2/testCase.java">
+            <classes>
+                <class name="TestNG.Listeners.IAnnotationTransformer.ITransformer.IAnnotationChanger.example2.testCase"/>
+            </classes>
+    </test>
+</suite>

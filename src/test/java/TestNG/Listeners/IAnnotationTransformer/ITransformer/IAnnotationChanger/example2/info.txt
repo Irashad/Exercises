@@ -1,0 +1,9 @@
+normalda testCase Classina gelib run etsek birinci
+verifyTitleGoogle
+sonra ise
+TC_02 methodu cagrilacaq
+
+lakin IAnnotationTransformer ile run elesek priority sirasi deyisecek
+ ve birinci
+ TC_02
+ sonra ise verifyTitleGoogle cagrilacaq
