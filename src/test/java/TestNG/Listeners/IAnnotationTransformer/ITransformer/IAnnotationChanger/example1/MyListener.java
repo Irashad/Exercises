@@ -5,7 +5,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 
 public class MyListener implements IAnnotationTransformer {
-    int invocationCounty=3;
+    short invocationCounty=3;
     @Override
     public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
         IAnnotationTransformer.super.transform(annotation, testClass, testConstructor, testMethod);
@@ -13,5 +13,6 @@ public class MyListener implements IAnnotationTransformer {
         if (testMethod.getName().equals("verifyTitleGoogle")) {
             annotation.setInvocationCount(invocationCounty);
         }
+
     }
 }
