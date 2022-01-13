@@ -8,7 +8,7 @@ public class SuiteListenersTests2 {
     @BeforeSuite
     public void test1()
     {
-        System.out.println("Suite2: test3");
+        System.out.println("Suite2: test1");
     }
 
 

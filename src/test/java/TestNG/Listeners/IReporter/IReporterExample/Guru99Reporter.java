@@ -1,12 +1,8 @@
-package TestNG.Listeners.IReporter;
+package TestNG.Listeners.IReporter.IReporterExample;
 import java.util.Collection;
-
 import java.util.Date;
-
 import java.util.List;
-
 import java.util.Map;
-
 import java.util.Set;
 import org.testng.IReporter;
 import org.testng.IResultMap;
@@ -14,12 +10,10 @@ import org.testng.ISuite;
 import org.testng.ISuiteResult;
 import org.testng.ITestContext;
 import org.testng.ITestNGMethod;
-import org.testng.reporters.IReporterConfig;
 import org.testng.xml.XmlSuite;
 public class Guru99Reporter implements IReporter{
 
     @Override
-
     public void generateReport(List<XmlSuite> arg0, List<ISuite> arg1,
 
                                String outputDirectory) {
@@ -46,17 +40,15 @@ public class Guru99Reporter implements IReporter{
 
                 //Print Suite detail in Console
 
-                System.out.println("Suite Name->"+context.getName()
+                System.out.println("Suite Name->"+context.getName()+ "\n"
 
-                        + "::Report output Ditectory->"+context.getOutputDirectory()
+                        + "::Report output Ditectory->"+context.getOutputDirectory()+ "\n"
 
-                        +"::Suite Name->"+ context.getSuite().getName()
+                        +"::Suite Name->"+ context.getSuite().getName()+ "\n"
 
-                        +"::Start Date Time for execution->"+context.getStartDate()
+                        +"::Start Date Time for execution->"+context.getStartDate()+ "\n"
 
-                        +"::End Date Time for execution->"+context.getEndDate());
-
-
+                        +"::End Date Time for execution->"+context.getEndDate()+ "\n");
 
                 //Get Map for only failed test cases
 
@@ -93,5 +85,6 @@ public class Guru99Reporter implements IReporter{
 
 
     }
+
 
 }

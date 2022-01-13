@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners(value=InvokedMethodListeners.class)
+@Listeners(InvokedMethodListeners.class)
 public class InvokedMethodListenersTest {
     @Test
     public void test1()
